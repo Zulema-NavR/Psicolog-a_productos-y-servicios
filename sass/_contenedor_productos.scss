@@ -1,0 +1,46 @@
+main {
+    h1 {
+        @include titulos ($tipografia_titulos, center, 40px);
+    }
+
+    #contenedor_productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        padding: 3rem;
+
+        .card {
+            background-color: transparent;
+            width: 300%;
+            height: 300%;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px;
+
+            .card-body {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+            }
+        }
+
+        .card-title {
+            @include titulos ($tipografia_titulos, center, 25px);
+        }
+
+        p {
+            font-weight: 500;
+            font-family: $tipografia_textos;
+        }
+
+        btn btn-primary {
+            background-color: $color_secundario;
+            padding: 1rem;
+            border-radius: 5px;
+            border: none;
+            width: fit-content;
+            color: white
+        }
+    }
+
+}

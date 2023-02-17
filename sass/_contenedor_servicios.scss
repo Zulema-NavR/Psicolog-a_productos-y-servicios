@@ -1,0 +1,14 @@
+main {
+    h1 {
+        font-family: $tipografia_titulos;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    #contenedor_servicios {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        padding: 3rem;
+    }
+}

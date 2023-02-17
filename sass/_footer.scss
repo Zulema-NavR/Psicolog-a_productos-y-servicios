@@ -1,0 +1,12 @@
+footer {
+    padding: 5rem 2rem;
+    div {
+        .tituloFooter {
+            @include titulos ($tipografiaTitulos, left, 20px)
+        }
+        .contenedorRedes {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

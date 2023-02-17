@@ -1,0 +1,13 @@
+@media only screen and (max-width: 600px) {
+    main {
+        #contenedor_productos {
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            padding: 1rem;
+            .card {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+}
