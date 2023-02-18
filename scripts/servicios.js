@@ -1,6 +1,6 @@
 const contenedor_servicios = document.getElementById("contenedor_servicios")
 
-const carritoDeCompras = [];
+
 const servicios = [ 
     {id:10, nombre: "➱Consultoría, ➱Desarrollo Organizacional, ➱Recursos Humanos.", imagen:"./imagenes/S_1.png", precio: 5000, cantidad: 1},
     {id:11, nombre: "➱Orientación Vocacional, ➱Metodología de la Enseñanza, ➱Problemas de aprendizaje.", imagen:"./imagenes/S_2.png", precio: 3800, cantidad: 1},
@@ -21,7 +21,9 @@ servicios.forEach (item => {
             <div class="flip-card-back">
                 <h3 class="tituloCard">Servicios: ${item.nombre}</h3>
                 <p>PRECIO: $${item.precio}</p>
-                <button id="servicios${item.id}">Agregar al carrito</button>
+                <button id="servicios${item.id}">⬇Haz tu consulta en la sección Contacto⬇</button>
+                <a class="nav-link" href="Contacto.html">Contacto</a>
+                
             </div>
         </div>
     </div>
