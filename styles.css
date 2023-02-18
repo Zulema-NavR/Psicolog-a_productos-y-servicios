@@ -3,6 +3,28 @@ body {
   background-color: lightsteelblue;
 }
 
+header {
+  padding: 2.5rem 3rem;
+}
+header div {
+  gap: 3px;
+}
+header div .botonCarrito {
+  font-size: 23px;
+  padding-right: 0;
+}
+header div .contadorCarrito {
+  color: white;
+  margin: 0;
+  background-color: #ED8074;
+  height: 24px;
+  width: 24px;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+}
+
 main h1 {
   font-family: "Ubuntu", sans-serif;
   text-align: center;
@@ -109,6 +131,43 @@ main #contenedor_servicios .flip-card .flip-card-inner .flip-card-back button {
   border: none;
   width: fit-content;
   color: white;
+}
+
+aside div div table thead .tituloTabla {
+  text-align: center;
+}
+aside div div table #carritoOffcanvas .tablaProductos {
+  height: 5rem;
+}
+aside div div table #carritoOffcanvas .tablaProductos td {
+  width: 200px;
+}
+aside div div table #carritoOffcanvas .tablaProductos td img {
+  width: 85%;
+}
+aside div div table #carritoOffcanvas .tablaProductos .infoProducto {
+  font-size: 15px;
+  text-align: center;
+}
+aside div div table #carritoOffcanvas .tablaProductos .eliminarProducto {
+  font-size: 22px;
+  color: #ED8074;
+  height: 10px;
+}
+aside div div table #carritoOffcanvas .tablaProductos .eliminarProducto .deleteIconify {
+  border: 1px solid #ED8074;
+  cursor: pointer;
+}
+aside div .botonComprar {
+  background-color: #ED8074;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  border: none;
+  width: fit-content;
+  color: white;
+}
+aside div .botonComprar:hover {
+  background-color: #04AA6D;
 }
 
 @media only screen and (max-width: 600px) {

@@ -1,6 +1,6 @@
 const contenedor_servicios = document.getElementById("contenedor_servicios")
 
-
+const carritoDeCompras = [];
 const servicios = [ 
     {id:10, nombre: "➱Consultoría, ➱Desarrollo Organizacional, ➱Recursos Humanos.", imagen:"./imagenes/S_1.png", precio: 5000, cantidad: 1},
     {id:11, nombre: "➱Orientación Vocacional, ➱Metodología de la Enseñanza, ➱Problemas de aprendizaje.", imagen:"./imagenes/S_2.png", precio: 3800, cantidad: 1},
