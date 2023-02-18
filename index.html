@@ -28,7 +28,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav w-100 justify-content-around">
               <a class="nav-link" href="index.html">Inicio</a>
-              <a class="nav-link" href="quienes_somos.html">¿Quienes somos?</a>
+              <a class="nav-link" href="quienes_somos.html">¿Quiénes somos?</a>
               <a class="nav-link" href="Servicios.html">Servicios</a>
               <a class="nav-link" href="Productos.html">Productos</a>
               <a class="nav-link" href="Contacto.html">Contacto</a>
@@ -42,28 +42,27 @@
   </header>
   <main>
     <h1>Bienvenidos a "Posible-Mente"</h1>
-    <h3>"Todos es posible si pones tu mente en ello"</h3>
-    <audio src="./Audios/Canción Fondo.mp3" controls></audio>
+    <h3 class="Frase">"Todo es posible si pones tu mente en ello"</h3>
     <section>
         <h2>Consultoría, Atención Psicológica y Desarrollo Integral</h2>
-        <img src="./Imagenes/Psicología Integral.png" alt="Psicología Integral">
-        <p>Ofrecemos servicios y productos relacionados con la Psicología en sus diversas áreas.
+        <Section>
+          <ol class="center">
+              <li class="center">◍Psicología Organizacional y del Trabajo</li>
+              <li class="center">◍Psicología y Educación</li>
+              <li class="center">◍Psicología Social</li>
+              <li class="center">◍Psicología Clínica</li>
+              <li class="center">◍Psicoterapia</li>
+          </ol>
+      </Section>
+        <img src="./Imagenes/Psicología Integral.png" alt="Psicología Integral" class="center" height="340" width="50" >
+        <p class="center">Ofrecemos servicios y productos relacionados con la Psicología en sus diversas áreas.
             Psicología Organizacional y del Trabajo, Psicología y Educación, Psicología Social, Psicología Clínica y Psicoterapia.
             Además ponemos a dispocisión herramientas, imprimibles y distintos recursos para impulsar el "Desarrollo Integral" de los usuarios.
         </p>
     </section>
-    <Section>
-        <ol>
-            <h2>Principales Áreas de la Psicología</h2>
-            <li>Psicología Organizacional y del Trabajo</li>
-            <li>Psicología y Educación</li>
-            <li>Psicología Social</li>
-            <li>Psicología Clínica</li>
-            <li>Psicoterapia</li>
-        </ol>
-    </Section>
+
     <h3>Nuestros Productos</h3>
-    <section id="contenedor_productos"></section>
+    <section id="contenedor_productos" class="center"></section>
     <aside>
       <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
@@ -98,6 +97,7 @@
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/servicios.js"></script>
 </body>
 
 </html>

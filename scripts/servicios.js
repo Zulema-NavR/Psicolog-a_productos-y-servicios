@@ -1,17 +1,16 @@
 const contenedor_servicios = document.getElementById("contenedor_servicios")
 
 
-const servicio = [
-    { id: 10, nombre: "Psicología Organizacional y del Trabajo", imagen: "./S_1",  precio: 4000, cantidad: 1 },
-    { id: 11, nombre: "Psicología y Educación", imagen: "./imagenes/P_2_Agenda espacio.png", precio: 350, cantidad: 1 },
-    { id: 12, nombre: "Psicología Social", imagen: "./imagenes/P_2_Agenda espacio.png", precio: 350, cantidad: 1 },
-    { id: 13, nombre: "Psicología Clínica", imagen: "./imagenes/P_2_Agenda espacio.png", precio: 350, cantidad: 1 },
-    { id: 14, nombre: "Psicoterapia", imagen: "./imagenes/P_2_Agenda espacio.png", precio: 350, cantidad: 1 },
+const servicios = [ 
+    {id:10, nombre: "➱Consultoría, ➱Desarrollo Organizacional, ➱Recursos Humanos.", imagen:"./imagenes/S_1.png", precio: 5000, cantidad: 1},
+    {id:11, nombre: "➱Orientación Vocacional, ➱Metodología de la Enseñanza, ➱Problemas de aprendizaje.", imagen:"./imagenes/S_2.png", precio: 3800, cantidad: 1},
+    {id:12, nombre: "➱Gestión de Proyectos Sociales, ➱Investigación, ➱Publicaciones.", imagen:"./imagenes/S_3.png", precio: 4000, cantidad: 1},
+    {id:13, nombre: "➱Atención Trastornos Mentales, ➱Manejo de estrés y ansiedad, ➱Diagnósticos.", imagen:"./imagenes/S_4.png", precio: 3800, cantidad: 1},
+    {id:14, nombre: "En Psicoterapia➱Individual, ➱Pareja, ➱Familiar, ➱Grupo.", imagen:"./imagenes/S_5.png", precio: 400, cantidad: 1}
+
 ]
 
-
-
-servicio.forEach (item => {
+servicios.forEach (item => {
     contenedor_servicios.innerHTML += 
     `
     <div class="flip-card">
@@ -20,9 +19,9 @@ servicio.forEach (item => {
                 <img src="${item.imagen}" alt="${item.nombre}">
             </div>
             <div class="flip-card-back">
-                <h3 class>servicio ${item.nombre}</h3>
-                <p>Precio: $${item.precio}</p>
-                <button id="servicio${item.id}">Agregar al carrito</button>
+                <h3 class="tituloCard">Servicios: ${item.nombre}</h3>
+                <p>PRECIO: $${item.precio}</p>
+                <button id="servicios${item.id}">Agregar al carrito</button>
             </div>
         </div>
     </div>

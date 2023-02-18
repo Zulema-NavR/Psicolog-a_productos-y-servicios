@@ -26,3 +26,10 @@ producto.forEach (item => {
 </div>
     `
 })
+
+const agregarAlcarrito = (productoSeleccionado, carrito) => {
+    carritoDecompras.push (productoSeleccionado, carrito)
+    console.log ("Se agregó al carrito". carrito);
+}
+
+agregarAlCarrito (producto , carritoDeCompras)
